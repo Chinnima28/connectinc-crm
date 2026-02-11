@@ -8,7 +8,11 @@ document.getElementById('user-welcome').textContent = `Manage your clients effor
 
 // State
 let customers = [];
-const apiBase = '/api/v1/customers';
+// For local development: '/api/v1/customers'
+// For production: 'https://chinspring-api.onrender.com/api/v1/customers'
+const apiBase = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? '/api/v1/customers'
+    : 'https://chinspring-api.onrender.com/api/v1/customers';
 
 // Initialization
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,6 +1,7 @@
 package com.chinmayie.chinspring;
 
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.HttpStatus;
 import java.util.List;
 
 @RestController
@@ -20,6 +21,7 @@ public class CustomerController {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public void registerCustomer(
             @RequestHeader("X-User-Email") String ownerEmail,
             @RequestBody Customer customer) {
@@ -43,6 +45,7 @@ public class CustomerController {
     }
 
     @PostMapping("{id}/interactions")
+    @ResponseStatus(HttpStatus.CREATED)
     public void addInteraction(
             @RequestHeader("X-User-Email") String ownerEmail,
             @PathVariable("id") Long id,
