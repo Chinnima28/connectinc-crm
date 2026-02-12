@@ -46,7 +46,10 @@ We don't just hope it works—we prove it. Our testing strategy focuses on **Iso
 We follow the **AAA (Arrange-Act-Assert)** pattern to validate our service layer logic without needing a slow, heavy database.
 
 ![JUnit Test Execution Result](docs/screenshots/junit_results.png)
-*(Placeholder: Upload your JUnit execution screenshot to `docs/screenshots/junit_results.png`)*
+<img width="1774" height="574" alt="Screenshot 2026-02-06 163557" src="https://github.com/user-attachments/assets/2bb639f1-e16c-4e04-8cd0-fa34fa0ee5cd" />
+<img width="1332" height="272" alt="Screenshot 2026-02-06 164031" src="https://github.com/user-attachments/assets/5908e4cf-7d0d-4eac-8727-0963f049ab59" />
+
+
 
 ### 🛰️ API testing (Postman)
 Comprehensive integration checks to ensure the "pipes" are connected correctly between the frontend and backend.
