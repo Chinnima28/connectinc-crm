@@ -55,13 +55,16 @@ We follow the **AAA (Arrange-Act-Assert)** pattern to validate our service layer
 Comprehensive integration checks to ensure the "pipes" are connected correctly between the frontend and backend.
 
 ![Postman API Validation](docs/screenshots/postman_tests.png)
-*(Placeholder: Upload your Postman screenshot to `docs/screenshots/postman_tests.png`)*
+<img width="1271" height="891" alt="Screenshot 2026-02-06 212405" src="https://github.com/user-attachments/assets/0a7d1850-4c58-4e2c-91f5-8d5c3399308e" />
+
+<img width="1276" height="667" alt="Screenshot 2026-02-06 213915" src="https://github.com/user-attachments/assets/72efae71-9c0c-462d-8a8a-dd6fc62f5aef" />
+
 
 ---
 
 ## 🎨 4. Frontend Mastery
 
-The UI is built with **Modern Vanilla JavaScript** and **Vite**, proving that you don't always need heavy frameworks like React to create a premium experience.
+The UI is built with **Modern Vanilla JavaScript** and **Vite**.
 
 - **State Management**: Localized state for responsive UI updates.
 - **Dynamic Icons**: Powered by **Lucide**, ensuring a crisp, modern aesthetic.
