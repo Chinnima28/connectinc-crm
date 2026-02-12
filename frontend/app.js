@@ -12,7 +12,7 @@ let customers = [];
 // For production: 'https://chinspring-api.onrender.com/api/v1/customers'
 const apiBase = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? '/api/v1/customers'
-    : 'https://chinspring-api.onrender.com/api/v1/customers';
+    : 'https://connectinc-crm.onrender.com/api/v1/customers';
 
 // Initialization
 document.addEventListener('DOMContentLoaded', () => {
