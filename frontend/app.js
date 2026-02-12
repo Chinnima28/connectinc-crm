@@ -1,10 +1,11 @@
-// Auth Guard
 const userEmail = localStorage.getItem('userEmail');
-if (!userEmail) {
+if (!userEmail && !window.location.href.includes('login.html')) {
     window.location.href = 'login.html';
 }
 
-document.getElementById('user-welcome').textContent = `Manage your clients effortlessly, ${userEmail}`;
+if (userEmail) {
+    document.getElementById('user-welcome').textContent = `Manage your clients effortlessly, ${userEmail}`;
+}
 
 // State
 let customers = [];
