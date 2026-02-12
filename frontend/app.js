@@ -106,20 +106,20 @@ function renderCustomers() {
 }
 
 // Modal Logic
-function showRegisterModal() {
+window.showRegisterModal = () => {
     document.getElementById('register-modal').style.display = 'flex';
 }
 
-function hideRegisterModal() {
+window.hideRegisterModal = () => {
     document.getElementById('register-modal').style.display = 'none';
 }
 
-function showInteractionModal(id) {
+window.showInteractionModal = (id) => {
     document.getElementById('interaction-customer-id').value = id;
     document.getElementById('interaction-modal').style.display = 'flex';
 }
 
-function hideInteractionModal() {
+window.hideInteractionModal = () => {
     document.getElementById('interaction-modal').style.display = 'none';
 }
 
@@ -174,7 +174,7 @@ document.getElementById('interaction-form').addEventListener('submit', async (e)
     }
 });
 
-async function deleteCustomer(id) {
+window.deleteCustomer = async (id) => {
     if (confirm('Are you sure you want to delete this client?')) {
         try {
             await fetch(`${apiBase}/${id}`, {
@@ -188,7 +188,7 @@ async function deleteCustomer(id) {
     }
 }
 
-function logout() {
+window.logout = () => {
     localStorage.removeItem('userEmail');
     window.location.href = 'login.html';
 }
